@@ -1,0 +1,3 @@
+/*
+WAP to find how many perfect number available in array
+*/

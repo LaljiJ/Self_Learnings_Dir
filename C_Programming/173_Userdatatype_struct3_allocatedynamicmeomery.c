@@ -1,0 +1,4 @@
+/*
+Design a function to allocate dynamic memory to one student record and 
+return the allocated dynamic memory address
+*/

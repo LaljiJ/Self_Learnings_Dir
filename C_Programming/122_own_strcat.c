@@ -1,0 +1,3 @@
+/*
+WAP to create own strcat function
+*/

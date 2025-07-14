@@ -1,0 +1,3 @@
+/*
+WAP to print array element through integer pointer
+*/

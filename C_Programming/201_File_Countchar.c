@@ -1,0 +1,3 @@
+/*
+WAp to count given character how many time present in file
+*/

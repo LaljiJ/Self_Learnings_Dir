@@ -1,0 +1,3 @@
+/*
+WAP to find the number of prime number in given array
+*/

@@ -1,0 +1,3 @@
+/*
+WAP to display asci value of character.
+*/

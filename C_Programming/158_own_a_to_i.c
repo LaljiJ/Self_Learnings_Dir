@@ -1,0 +1,3 @@
+/*
+WAP to create own atoi function
+*/

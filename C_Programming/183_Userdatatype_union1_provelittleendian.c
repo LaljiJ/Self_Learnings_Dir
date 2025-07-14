@@ -1,0 +1,3 @@
+/*
+WAP to prove we are working in littel endian using union
+*/

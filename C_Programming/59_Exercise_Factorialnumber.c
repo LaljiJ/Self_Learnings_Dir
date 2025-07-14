@@ -1,0 +1,3 @@
+/*
+WAP to print factorrial of gien number
+*/

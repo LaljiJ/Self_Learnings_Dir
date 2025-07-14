@@ -1,0 +1,3 @@
+/*
+WAP to print binary of given number through function and count how many bit set or clear return it
+*/

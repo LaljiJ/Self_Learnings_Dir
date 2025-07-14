@@ -1,0 +1,3 @@
+/*
+Designa function to copy source string into destination string
+*/

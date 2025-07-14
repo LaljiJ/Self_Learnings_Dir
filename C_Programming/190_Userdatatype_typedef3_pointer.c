@@ -1,0 +1,3 @@
+/*
+WAP to typedef a all type of pointer
+*/

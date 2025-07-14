@@ -1,0 +1,3 @@
+/*
+WAP to typedef a structure and used it
+*/

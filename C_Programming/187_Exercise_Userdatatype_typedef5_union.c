@@ -1,0 +1,3 @@
+/*
+WAP to typedef a union and used it
+*/

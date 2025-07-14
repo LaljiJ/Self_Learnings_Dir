@@ -1,0 +1,3 @@
+/*
+WAP to compare two string if equal then print equal otherwise not equal
+*/

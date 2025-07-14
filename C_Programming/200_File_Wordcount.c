@@ -1,0 +1,3 @@
+/*
+WAP to count total word in given file
+*/

@@ -1,0 +1,3 @@
+/*
+WAp to scan two character and replace second char with first char
+*/

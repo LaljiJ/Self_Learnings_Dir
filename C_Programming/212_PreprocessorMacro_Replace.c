@@ -1,0 +1,3 @@
+/*
+WAP to replace data using macro
+*/

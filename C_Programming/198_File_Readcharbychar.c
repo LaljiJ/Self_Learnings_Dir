@@ -1,0 +1,3 @@
+/*
+WAp to read data from file character by character and print on screen
+*/

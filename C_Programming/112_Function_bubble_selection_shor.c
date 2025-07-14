@@ -1,0 +1,3 @@
+/*
+WAP to design two function shoart array bubble shor and selection short
+*/

@@ -1,0 +1,3 @@
+/*
+WAP to print binary of given number through function    
+*/

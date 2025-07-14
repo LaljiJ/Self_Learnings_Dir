@@ -1,0 +1,3 @@
+/*
+WAP to find how many armstrongtouch revers digit number available in array
+*/

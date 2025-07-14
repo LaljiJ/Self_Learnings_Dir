@@ -1,0 +1,3 @@
+/*
+WAP to design function delete node double linkedlist
+*/

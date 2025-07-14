@@ -1,0 +1,3 @@
+/*
+WAP to design function delete that delete all node from linkedlist
+*/

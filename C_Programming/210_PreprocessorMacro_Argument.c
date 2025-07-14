@@ -1,0 +1,3 @@
+/*
+WAP to define macro SUM and define argumenr macro SUM and file sum
+*/

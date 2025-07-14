@@ -1,0 +1,3 @@
+/*
+Designa function delete the given character from string
+*/

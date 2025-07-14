@@ -1,0 +1,3 @@
+/*
+Design function print string character by character
+*/

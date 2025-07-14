@@ -1,0 +1,158 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        11/24/2019  12:10:56  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE io_driver.obj, main.obj TO SWITCH_PROJECT RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  io_driver.obj (IO_DRIVER)
+  main.obj (MAIN)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  SWITCH_PROJECT (IO_DRIVER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     009AH     UNIT         ?PR?_LED_READ?IO_DRIVER
+            CODE    009DH     008FH     UNIT         ?PR?_LED_WRITE?IO_DRIVER
+            CODE    012CH     001DH     UNIT         ?PR?MAIN?MAIN
+            CODE    0149H     0014H     UNIT         ?PR?_DELAY_MS?IO_DRIVER
+            CODE    015DH     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   SWITCH_PROJECT (IO_DRIVER)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?MAIN
+
+?PR?MAIN?MAIN
+  +--> ?PR?_LED_READ?IO_DRIVER
+  +--> ?PR?_LED_WRITE?IO_DRIVER
+
+
+
+SYMBOL TABLE OF MODULE:  SWITCH_PROJECT (IO_DRIVER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        IO_DRIVER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0080H         PUBLIC        P0
+  D:0090H         PUBLIC        P1
+  D:00A0H         PUBLIC        P2
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/24/2019  12:10:56  PAGE 2
+
+
+  D:00B0H         PUBLIC        P3
+  C:0003H         PUBLIC        _led_read
+  C:009DH         PUBLIC        _led_write
+  C:0149H         PUBLIC        _delay_ms
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        ms
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:0149H         LINE#         5
+  C:0149H         LINE#         6
+  C:0149H         LINE#         9
+  C:014DH         LINE#         10
+  C:014DH         LINE#         11
+  C:0151H         LINE#         12
+  C:0155H         LINE#         13
+  C:015CH         LINE#         15
+  -------         ENDPROC       _DELAY_MS
+  -------         PROC          _LED_WRITE
+  D:0007H         SYMBOL        port
+  D:0005H         SYMBOL        pin
+  D:0003H         SYMBOL        val
+  C:009DH         LINE#         18
+  C:009DH         LINE#         19
+  C:009DH         LINE#         20
+  C:00AEH         LINE#         21
+  C:00AEH         LINE#         22
+  C:00B1H         LINE#         23
+  C:00BEH         LINE#         25
+  C:00CCH         LINE#         26
+  C:00CDH         LINE#         28
+  C:00D0H         LINE#         29
+  C:00DDH         LINE#         31
+  C:00EBH         LINE#         32
+  C:00ECH         LINE#         34
+  C:00EFH         LINE#         35
+  C:00FCH         LINE#         37
+  C:010AH         LINE#         38
+  C:010BH         LINE#         40
+  C:010EH         LINE#         41
+  C:011BH         LINE#         43
+  C:012BH         LINE#         44
+  C:012BH         LINE#         45
+  C:012BH         LINE#         47
+  -------         ENDPROC       _LED_WRITE
+  -------         PROC          _LED_READ
+  D:0007H         SYMBOL        port
+  D:0005H         SYMBOL        pin
+  -------         DO            
+  D:0004H         SYMBOL        status
+  -------         ENDDO         
+  C:0003H         LINE#         52
+  C:0003H         LINE#         53
+  C:0003H         LINE#         56
+  C:0014H         LINE#         57
+  C:0014H         LINE#         58
+  C:0033H         LINE#         59
+BL51 BANKED LINKER/LOCATER V6.22                                                      11/24/2019  12:10:56  PAGE 3
+
+
+  C:0035H         LINE#         61
+  C:0054H         LINE#         62
+  C:0056H         LINE#         64
+  C:0075H         LINE#         65
+  C:0077H         LINE#         67
+  C:009AH         LINE#         68
+  C:009AH         LINE#         69
+  C:009AH         LINE#         71
+  C:009CH         LINE#         72
+  -------         ENDPROC       _LED_READ
+  -------         ENDMOD        IO_DRIVER
+
+  -------         MODULE        MAIN
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:012CH         PUBLIC        main
+  -------         PROC          MAIN
+  C:012CH         LINE#         4
+  C:012CH         LINE#         5
+  C:012CH         LINE#         6
+  C:012CH         LINE#         7
+  C:012CH         LINE#         8
+  C:0135H         LINE#         9
+  C:0135H         LINE#         10
+  C:013CH         LINE#         12
+  C:013EH         LINE#         14
+  C:0147H         LINE#         16
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY_MS?IO_DRIVER
+
+Program Size: data=9.0 xdata=0 code=361
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,3 @@
+/*
+WAP to print likedlist in revers order
+*/

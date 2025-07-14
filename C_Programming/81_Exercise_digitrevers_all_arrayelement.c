@@ -1,0 +1,3 @@
+/*
+WAP to revers digit of all array element
+*/

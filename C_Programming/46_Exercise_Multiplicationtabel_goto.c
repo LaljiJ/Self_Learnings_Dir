@@ -1,0 +1,3 @@
+/*
+WAP to display multiplication tabel given number using goto statment
+*/

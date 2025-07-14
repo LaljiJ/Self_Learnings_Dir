@@ -1,0 +1,3 @@
+/*
+WAP to copy source string into another destination string
+*/

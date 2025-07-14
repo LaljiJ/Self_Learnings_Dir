@@ -1,0 +1,3 @@
+/*
+Design function to revers the given string ufing function and pointer
+*/

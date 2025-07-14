@@ -1,0 +1,3 @@
+/*
+designa a function pass structure to a function
+*/

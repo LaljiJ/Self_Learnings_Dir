@@ -1,0 +1,3 @@
+/*
+WAP to design function revers data in given linkedlist not revers print using array of pointer
+*/

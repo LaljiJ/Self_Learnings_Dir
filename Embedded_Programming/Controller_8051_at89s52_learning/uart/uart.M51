@@ -1,0 +1,258 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/05/2019  09:04:07  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\KEIL\C51\BIN\BL51.EXE io_driver.obj, keypad_4_4_driver.obj, uart_driver.obj, mainUART2_LoopBack.obj TO uart RAMSIZE (
+>> 256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  io_driver.obj (IO_DRIVER)
+  keypad_4_4_driver.obj (KEYPAD_4_4_DRIVER)
+  uart_driver.obj (UART_DRIVER)
+  mainUART2_LoopBack.obj (MAINUART2_LOOPBACK)
+  D:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  D:\KEIL\C51\LIB\C51S.LIB (?C?ICASE)
+
+
+LINK MAP OF MODULE:  uart (IO_DRIVER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     0002H     UNIT         ?DT?KEY_SCAN?KEYPAD_4_4_DRIVER
+            DATA    000AH     0001H     UNIT         _DATA_GROUP_
+            IDATA   000BH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     00C1H     UNIT         ?PR?KEY_SCAN?KEYPAD_4_4_DRIVER
+            CODE    00C4H     004AH     UNIT         ?PR?_UART_INIT?UART_DRIVER
+            CODE    010EH     002DH     UNIT         ?C?LIB_CODE
+            CODE    013BH     0019H     UNIT         ?PR?_DELAY_MS?IO_DRIVER
+            CODE    0154H     0011H     UNIT         ?PR?MAIN?MAINUART2_LOOPBACK
+            CODE    0165H     0010H     UNIT         ?CO?KEYPAD_4_4_DRIVER
+            CODE    0175H     000CH     UNIT         ?C_C51STARTUP
+            CODE    0181H     0008H     UNIT         ?PR?_UART_TX?UART_DRIVER
+            CODE    0189H     0008H     UNIT         ?PR?UART_RX?UART_DRIVER
+
+
+
+OVERLAY MAP OF MODULE:   uart (IO_DRIVER)
+
+
+SEGMENT                                  DATA_GROUP 
+  +--> CALLED SEGMENT                  START    LENGTH
+------------------------------------------------------
+?C_C51STARTUP                          -----    -----
+  +--> ?PR?MAIN?MAINUART2_LOOPBACK
+
+?PR?MAIN?MAINUART2_LOOPBACK            000AH    0001H
+  +--> ?PR?_UART_INIT?UART_DRIVER
+  +--> ?PR?UART_RX?UART_DRIVER
+  +--> ?PR?_UART_TX?UART_DRIVER
+
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/05/2019  09:04:07  PAGE 2
+
+
+
+SYMBOL TABLE OF MODULE:  uart (IO_DRIVER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        IO_DRIVER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:013BH         PUBLIC        _delay_ms
+  -------         PROC          _DELAY_MS
+  D:0006H         SYMBOL        ms
+  -------         DO            
+  D:0005H         SYMBOL        i
+  -------         ENDDO         
+  C:013BH         LINE#         6
+  C:013BH         LINE#         7
+  C:013BH         LINE#         9
+  C:0144H         LINE#         10
+  C:0144H         LINE#         11
+  C:0148H         LINE#         12
+  C:014CH         LINE#         13
+  C:0153H         LINE#         14
+  -------         ENDPROC       _DELAY_MS
+  -------         ENDMOD        IO_DRIVER
+
+  -------         MODULE        KEYPAD_4_4_DRIVER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A0H.0       PUBLIC        R0
+  D:00A0H         PUBLIC        P2
+  B:00A0H.1       PUBLIC        R1
+  B:00A0H.2       PUBLIC        R2
+  B:00A0H.3       PUBLIC        R3
+  C:0003H         PUBLIC        key_scan
+  B:00A0H.4       PUBLIC        C0
+  B:00A0H.5       PUBLIC        C1
+  B:00A0H.6       PUBLIC        C2
+  B:00A0H.7       PUBLIC        C3
+  -------         PROC          KEY_SCAN
+  -------         DO            
+  D:0008H         SYMBOL        ROW
+  D:0009H         SYMBOL        COL
+  C:0165H         SYMBOL        ARRY
+  C:007EH         SYMBOL        COLCHEK
+  -------         ENDDO         
+  C:0003H         LINE#         14
+  C:0003H         LINE#         15
+  C:0003H         LINE#         20
+  C:000BH         LINE#         21
+  C:0013H         LINE#         23
+  C:001DH         LINE#         24
+  C:0024H         LINE#         26
+  C:0026H         LINE#         27
+  C:002CH         LINE#         28
+  C:0036H         LINE#         29
+  C:0036H         LINE#         30
+  C:0039H         LINE#         31
+  C:003BH         LINE#         33
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/05/2019  09:04:07  PAGE 3
+
+
+  C:003BH         LINE#         35
+  C:003DH         LINE#         36
+  C:0043H         LINE#         37
+  C:004DH         LINE#         38
+  C:004DH         LINE#         39
+  C:0050H         LINE#         40
+  C:0052H         LINE#         42
+  C:0052H         LINE#         45
+  C:0054H         LINE#         46
+  C:005AH         LINE#         47
+  C:0064H         LINE#         48
+  C:0064H         LINE#         49
+  C:0067H         LINE#         50
+  C:0069H         LINE#         52
+  C:0069H         LINE#         56
+  C:006BH         LINE#         57
+  C:0071H         LINE#         58
+  C:007BH         LINE#         59
+  C:007BH         LINE#         60
+  C:007EH         LINE#         61
+  C:007EH         LINE#         63
+  C:007EH         LINE#         66
+  C:007EH         LINE#         67
+  C:0081H         LINE#         68
+  C:0081H         LINE#         69
+  C:0084H         LINE#         70
+  C:0086H         LINE#         71
+  C:0089H         LINE#         72
+  C:0089H         LINE#         73
+  C:008CH         LINE#         74
+  C:008EH         LINE#         75
+  C:0091H         LINE#         76
+  C:0091H         LINE#         77
+  C:0094H         LINE#         78
+  C:0096H         LINE#         79
+  C:0099H         LINE#         80
+  C:0099H         LINE#         81
+  C:009CH         LINE#         82
+  C:009CH         LINE#         84
+  C:00A6H         LINE#         86
+  C:00C3H         LINE#         87
+  -------         ENDPROC       KEY_SCAN
+  -------         ENDMOD        KEYPAD_4_4_DRIVER
+
+  -------         MODULE        UART_DRIVER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0189H         PUBLIC        uart_rx
+  C:0181H         PUBLIC        _uart_tx
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  D:0099H         PUBLIC        SBUF
+  D:0087H         PUBLIC        PCON
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  D:008DH         PUBLIC        TH1
+  C:00C4H         PUBLIC        _uart_init
+  B:0088H.6       PUBLIC        TR1
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/05/2019  09:04:07  PAGE 4
+
+
+  -------         PROC          _UART_INIT
+  D:0006H         SYMBOL        BAUD
+  C:00C4H         LINE#         7
+  C:00C4H         LINE#         8
+  C:00C4H         LINE#         10
+  C:00C7H         LINE#         11
+  C:00CAH         LINE#         13
+  C:00ECH         LINE#         14
+  C:00ECH         LINE#         15
+  C:00EFH         LINE#         16
+  C:00F1H         LINE#         17
+  C:00F4H         LINE#         18
+  C:00F6H         LINE#         19
+  C:00F9H         LINE#         20
+  C:00FBH         LINE#         21
+  C:00FEH         LINE#         22
+  C:0100H         LINE#         23
+  C:0103H         LINE#         24
+  C:0105H         LINE#         25
+  C:0108H         LINE#         26
+  C:010BH         LINE#         27
+  C:010BH         LINE#         28
+  C:010BH         LINE#         30
+  C:010DH         LINE#         32
+  -------         ENDPROC       _UART_INIT
+  -------         PROC          _UART_TX
+  D:0007H         SYMBOL        CH
+  C:0181H         LINE#         37
+  C:0181H         LINE#         38
+  C:0181H         LINE#         40
+  C:0183H         LINE#         41
+  C:0186H         LINE#         42
+  C:0188H         LINE#         44
+  -------         ENDPROC       _UART_TX
+  -------         PROC          UART_RX
+  C:0189H         LINE#         49
+  C:0189H         LINE#         50
+  C:0189H         LINE#         52
+  C:018CH         LINE#         53
+  C:018EH         LINE#         55
+  C:0190H         LINE#         57
+  -------         ENDPROC       UART_RX
+  -------         ENDMOD        UART_DRIVER
+
+  -------         MODULE        MAINUART2_LOOPBACK
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0154H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  D:000AH         SYMBOL        temp
+  -------         ENDDO         
+  C:0154H         LINE#         2
+  C:0154H         LINE#         3
+  C:0154H         LINE#         5
+  C:015BH         LINE#         6
+  C:015BH         LINE#         7
+  C:015BH         LINE#         8
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/05/2019  09:04:07  PAGE 5
+
+
+  C:0160H         LINE#         9
+  C:0163H         LINE#         10
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAINUART2_LOOPBACK
+
+  -------         MODULE        ?C?ICASE
+  C:010EH         PUBLIC        ?C?ICASE
+  -------         ENDMOD        ?C?ICASE
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?KEY_SCAN?KEYPAD_4_4_DRIVER
+
+Program Size: data=12.0 xdata=0 code=401
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)

@@ -1,0 +1,3 @@
+/*
+WAP to find second larget element in given array
+*/

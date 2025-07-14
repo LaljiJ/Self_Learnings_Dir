@@ -1,0 +1,3 @@
+/*
+WAP to display binary of given number using goto statment
+*/

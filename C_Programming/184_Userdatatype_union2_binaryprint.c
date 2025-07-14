@@ -1,0 +1,3 @@
+/*
+WAP to print the binary formate of float using union
+*/

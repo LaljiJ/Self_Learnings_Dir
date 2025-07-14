@@ -1,0 +1,3 @@
+/*
+WAP to make printf function and macro and used macro in programm
+*/
