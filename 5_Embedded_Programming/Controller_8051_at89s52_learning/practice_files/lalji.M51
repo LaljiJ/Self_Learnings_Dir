@@ -1,0 +1,248 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        12/12/2019  13:21:54  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+C:\KEIL\C51\BIN\BL51.EXE uart_driver.obj, uart_interrupt.obj, main3_INTERRUPT.obj TO lalji RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  uart_driver.obj (UART_DRIVER)
+  uart_interrupt.obj (UART_INTERRUPT)
+  main3_INTERRUPT.obj (MAIN3_INTERRUPT)
+  C:\KEIL\C51\LIB\C51S.LIB (?C_STARTUP)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CLDPTR)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CLDOPTR)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?CSTOPTR)
+  C:\KEIL\C51\LIB\C51S.LIB (?C?ICASE)
+
+
+LINK MAP OF MODULE:  lalji (UART_DRIVER)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            DATA    0008H     000DH     UNIT         ?DT?MAIN3_INTERRUPT
+            DATA    0015H     0003H     UNIT         ?DT?_UART_RX_STRING?UART_DRIVER
+            DATA    0018H     0003H     UNIT         _DATA_GROUP_
+            IDATA   001BH     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     001EH     UNIT         ?CO?MAIN3_INTERRUPT
+                    0021H     0002H                  *** GAP ***
+            CODE    0023H     0003H     ABSOLUTE     
+            CODE    0026H     0095H     UNIT         ?C?LIB_CODE
+            CODE    00BBH     0051H     UNIT         ?PR?UART_HANDELER?UART_INTERRUPT
+            CODE    010CH     004AH     UNIT         ?PR?_UART_INIT?UART_DRIVER
+            CODE    0156H     003FH     UNIT         ?PR?_UART_RX_STRING?UART_DRIVER
+            CODE    0195H     0036H     UNIT         ?PR?MAIN?MAIN3_INTERRUPT
+            CODE    01CBH     0025H     UNIT         ?PR?_UART_STRING?UART_DRIVER
+            CODE    01F0H     000CH     UNIT         ?C_C51STARTUP
+            CODE    01FCH     0008H     UNIT         ?PR?_UART_TX?UART_DRIVER
+            CODE    0204H     0008H     UNIT         ?PR?UART_RX?UART_DRIVER
+            CODE    020CH     0005H     UNIT         ?PR?EN_UART_INTERRUPT?UART_INTERRUPT
+
+
+
+OVERLAY MAP OF MODULE:   lalji (UART_DRIVER)
+
+
+SEGMENT                                        DATA_GROUP 
+  +--> CALLED SEGMENT                        START    LENGTH
+------------------------------------------------------------
+?PR?UART_HANDELER?UART_INTERRUPT             -----    -----
+  +--> ?PR?_UART_TX?UART_DRIVER
+
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/12/2019  13:21:54  PAGE 2
+
+
+*** NEW ROOT ***************************************************
+
+?C_C51STARTUP                                -----    -----
+  +--> ?PR?MAIN?MAIN3_INTERRUPT
+
+?PR?MAIN?MAIN3_INTERRUPT                     -----    -----
+  +--> ?PR?_UART_INIT?UART_DRIVER
+  +--> ?PR?EN_UART_INTERRUPT?UART_INTERRUPT
+  +--> ?CO?MAIN3_INTERRUPT
+  +--> ?PR?_UART_STRING?UART_DRIVER
+
+?PR?_UART_STRING?UART_DRIVER                 0018H    0003H
+  +--> ?PR?_UART_TX?UART_DRIVER
+
+
+
+SYMBOL TABLE OF MODULE:  lalji (UART_DRIVER)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        UART_DRIVER
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0156H         PUBLIC        _uart_rx_string
+  C:0204H         PUBLIC        uart_rx
+  C:01FCH         PUBLIC        _uart_tx
+  B:0098H.0       PUBLIC        RI
+  B:0098H.1       PUBLIC        TI
+  D:0099H         PUBLIC        SBUF
+  D:0087H         PUBLIC        PCON
+  D:0098H         PUBLIC        SCON
+  D:0089H         PUBLIC        TMOD
+  C:01CBH         PUBLIC        _uart_string
+  D:008DH         PUBLIC        TH1
+  C:010CH         PUBLIC        _uart_init
+  B:0088H.6       PUBLIC        TR1
+  -------         PROC          _UART_INIT
+  D:0006H         SYMBOL        BAUD
+  C:010CH         LINE#         7
+  C:010CH         LINE#         8
+  C:010CH         LINE#         10
+  C:010FH         LINE#         11
+  C:0112H         LINE#         13
+  C:0134H         LINE#         14
+  C:0134H         LINE#         15
+  C:0137H         LINE#         16
+  C:0139H         LINE#         17
+  C:013CH         LINE#         18
+  C:013EH         LINE#         19
+  C:0141H         LINE#         20
+  C:0143H         LINE#         21
+  C:0146H         LINE#         22
+  C:0148H         LINE#         23
+  C:014BH         LINE#         24
+  C:014DH         LINE#         25
+  C:0150H         LINE#         26
+  C:0153H         LINE#         27
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/12/2019  13:21:54  PAGE 3
+
+
+  C:0153H         LINE#         28
+  C:0153H         LINE#         30
+  C:0155H         LINE#         32
+  -------         ENDPROC       _UART_INIT
+  -------         PROC          _UART_TX
+  D:0007H         SYMBOL        CH
+  C:01FCH         LINE#         37
+  C:01FCH         LINE#         38
+  C:01FCH         LINE#         40
+  C:01FEH         LINE#         41
+  C:0201H         LINE#         42
+  C:0203H         LINE#         44
+  -------         ENDPROC       _UART_TX
+  -------         PROC          UART_RX
+  C:0204H         LINE#         49
+  C:0204H         LINE#         50
+  C:0204H         LINE#         52
+  C:0207H         LINE#         53
+  C:0209H         LINE#         55
+  C:020BH         LINE#         57
+  -------         ENDPROC       UART_RX
+  -------         PROC          _UART_STRING
+  D:0018H         SYMBOL        US
+  C:01CBH         LINE#         61
+  C:01D1H         LINE#         62
+  C:01D1H         LINE#         64
+  C:01DCH         LINE#         65
+  C:01DCH         LINE#         66
+  C:01EDH         LINE#         67
+  C:01EFH         LINE#         69
+  -------         ENDPROC       _UART_STRING
+  -------         PROC          _UART_RX_STRING
+  D:0015H         SYMBOL        buf
+  D:0005H         SYMBOL        lenth
+  -------         DO            
+  D:0006H         SYMBOL        i
+  -------         ENDDO         
+  C:0156H         LINE#         206
+  C:015CH         LINE#         207
+  C:015CH         LINE#         210
+  C:0163H         LINE#         211
+  C:0163H         LINE#         212
+  C:0175H         LINE#         214
+  C:0181H         LINE#         215
+  C:0181H         LINE#         216
+  C:0184H         LINE#         217
+  -------         ENDPROC       _UART_RX_STRING
+  -------         ENDMOD        UART_DRIVER
+
+  -------         MODULE        UART_INTERRUPT
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  B:00A8H.7       PUBLIC        EA
+  B:00A8H.4       PUBLIC        ES
+  B:0098H.0       PUBLIC        RI
+  D:0099H         PUBLIC        SBUF
+  C:00BBH         PUBLIC        UART_Handeler
+  C:020CH         PUBLIC        en_uart_interrupt
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/12/2019  13:21:54  PAGE 4
+
+
+  -------         PROC          EN_UART_INTERRUPT
+  C:020CH         LINE#         7
+  C:020CH         LINE#         8
+  C:020CH         LINE#         9
+  C:0210H         LINE#         10
+  -------         ENDPROC       EN_UART_INTERRUPT
+  -------         PROC          UART_HANDELER
+  C:00BBH         LINE#         13
+  C:00D8H         LINE#         15
+  C:00DBH         LINE#         16
+  C:00DBH         LINE#         17
+  C:00DDH         LINE#         18
+  C:00E4H         LINE#         19
+  C:00F1H         LINE#         20
+  C:00F1H         LINE#         29
+  -------         ENDPROC       UART_HANDELER
+  -------         ENDMOD        UART_INTERRUPT
+
+  -------         MODULE        MAIN3_INTERRUPT
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:0195H         PUBLIC        main
+  D:0008H         PUBLIC        a
+  D:0014H         PUBLIC        i
+  -------         PROC          MAIN
+  C:0195H         LINE#         5
+  C:0195H         LINE#         6
+  C:0195H         LINE#         7
+  C:019CH         LINE#         8
+  C:019FH         LINE#         10
+  C:01A8H         LINE#         11
+  C:01A8H         LINE#         12
+  C:01A8H         LINE#         13
+  C:01B7H         LINE#         14
+  C:01B7H         LINE#         15
+  C:01C0H         LINE#         16
+  C:01C9H         LINE#         17
+  C:01C9H         LINE#         18
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        MAIN3_INTERRUPT
+
+  -------         MODULE        ?C?CLDPTR
+  C:0026H         PUBLIC        ?C?CLDPTR
+  -------         ENDMOD        ?C?CLDPTR
+
+  -------         MODULE        ?C?CLDOPTR
+  C:003FH         PUBLIC        ?C?CLDOPTR
+  -------         ENDMOD        ?C?CLDOPTR
+
+  -------         MODULE        ?C?CSTOPTR
+  C:006CH         PUBLIC        ?C?CSTOPTR
+  -------         ENDMOD        ?C?CSTOPTR
+
+  -------         MODULE        ?C?ICASE
+  C:008EH         PUBLIC        ?C?ICASE
+  -------         ENDMOD        ?C?ICASE
+
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+BL51 BANKED LINKER/LOCATER V6.22                                                      12/12/2019  13:21:54  PAGE 5
+
+
+    SEGMENT: ?PR?_UART_RX_STRING?UART_DRIVER
+
+Program Size: data=28.0 xdata=0 code=527
+LINK/LOCATE RUN COMPLETE.  1 WARNING(S),  0 ERROR(S)
