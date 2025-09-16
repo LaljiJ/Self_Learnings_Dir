@@ -1,0 +1,3 @@
+This directory is for learn freeRTOS.
+
+Link: https://www.freertos.org/
