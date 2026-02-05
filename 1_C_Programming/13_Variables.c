@@ -1,3 +1,8 @@
+/*
+Printing variables value
+*/
+
+
 #include <stdio.h>
 #include <stdbool.h>
 

@@ -1,3 +1,7 @@
+/*
+Initialize Float datatypes
+*/
+
 #include <stdio.h>
 
 int main()

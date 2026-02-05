@@ -1,3 +1,7 @@
+/*
+Initializing a variables
+*/
+
 #include <stdio.h>
 #include <stdbool.h>
 
