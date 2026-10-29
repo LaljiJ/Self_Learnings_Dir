@@ -1,0 +1,966 @@
+======================================================
+Roadmap Path
+======================================================
+
+1. Computer Fundamentals
+        ↓
+2. Linux / Terminal
+        ↓
+3. Git / GitHub
+        ↓
+4. Python Programming
+        ↓
+5. Data Structures & Algorithms
+        ↓
+6. Python for Data Science
+        ↓
+7. SQL & Databases
+        ↓
+8. Data Cleaning & Preprocessing
+        ↓
+9. EDA & Visualization
+        ↓
+10. Mathematics & Statistics
+        ↓
+11. Machine Learning Fundamentals
+        ↓
+12. Supervised Learning
+        ↓
+13. Unsupervised Learning
+        ↓
+14. Dimensionality Reduction
+        ↓
+15. Ensemble Learning
+        ↓
+16. Scikit-learn
+        ↓
+17. ML Evaluation & Optimization
+        ↓
+18. Advanced Machine Learning
+        ↓
+19. Time Series
+        ↓
+20. Recommender Systems
+        ↓
+21. ML Projects
+        ↓
+22. Deep Learning Fundamentals
+        ↓
+23. PyTorch
+        ↓
+24. Computer Vision
+        ↓
+25. NLP
+        ↓
+26. Sequential Deep Learning
+        ↓
+27. Transformers
+        ↓
+28. LLMs
+        ↓
+29. Generative AI
+        ↓
+30. Prompt Engineering
+        ↓
+31. Embeddings & Vector Databases
+        ↓
+32. RAG
+        ↓
+33. LLM Fine-Tuning
+        ↓
+34. LLM Evaluation & Safety
+        ↓
+35. AI Agents
+        ↓
+36. Advanced AI
+        ↓
+37. Data Engineering
+        ↓
+38. Software Engineering for AI/ML
+        ↓
+39. APIs & Backend
+        ↓
+40. Testing
+        ↓
+41. MLOps
+        ↓
+42. Model Deployment
+        ↓
+43. Docker
+        ↓
+44. Kubernetes
+        ↓
+45. Cloud
+        ↓
+46. CI/CD
+        ↓
+47. Model Monitoring
+        ↓
+48. AI System Design
+        ↓
+49. Production AI Projects
+        ↓
+50. Done
+
+
+
+
+
+======================================================
+Basic's
+======================================================
+
+1. Python Programming
+------------------------------------------------------
+	Python Syntax
+	Variables
+	Data Types
+	Operators
+	Conditions
+	Loops
+	Functions
+	Strings
+	Lists
+	Tuples
+	Sets
+	Dictionaries
+	List / Dictionary Comprehensions
+	Exception Handling
+	File Handling
+	Modules
+	Packages
+	pip
+	Virtual Environments
+	OOP
+	Iterators
+	Generators
+	Decorators
+	Lambda Functions
+	Type Hints
+	
+
+2. Python for Data Science
+------------------------------------------------------
+NumPy
+	Arrays
+	Dimensions
+	Indexing
+	Slicing
+	Reshaping
+	Broadcasting
+	Mathematical Operations
+	Statistical Operations
+
+Pandas
+	Series
+	DataFrames
+	Data Import / Export
+	Filtering
+	Sorting
+	Grouping
+	Aggregation
+	Merging
+	Joining
+	Missing Values
+	Duplicate Data
+	Data Transformation
+
+Visualization
+	Matplotlib
+	Seaborn
+	Plotting
+	Statistical Visualization
+
+
+3. SQL & Databases
+------------------------------------------------------
+	SQL Fundamentals
+	SELECT
+	WHERE
+	GROUP BY
+	HAVING
+	ORDER BY
+	JOINs
+	Subqueries
+	CTEs
+	Window Functions
+	Aggregate Functions
+	Indexes
+	Views
+	Transactions
+	Database Design
+	MySQL / PostgreSQL
+	NoSQL Basics
+	
+
+4. Data Cleaning & Preprocessing
+------------------------------------------------------
+	Missing Data
+	Duplicate Data
+	Outlier Detection
+	Data Transformation
+	Data Normalization
+	Data Standardization
+	Encoding
+	Categorical Data
+	Numerical Data
+	Date / Time Data
+	Data Validation
+	Data Quality
+	
+	
+5. Exploratory Data Analysis — EDA
+------------------------------------------------------
+	Univariate Analysis
+	Bivariate Analysis
+	Multivariate Analysis
+	Distribution Analysis
+	Correlation
+	Covariance
+	Outlier Analysis
+	Pattern Detection
+	Data Profiling
+	Statistical Visualization
+	Business Insights
+
+	
+======================================================
+Mathematics & Statistics
+======================================================
+
+6. Mathematics for Machine Learning
+------------------------------------------------------
+Linear Algebra
+	Scalars
+	Vectors
+	Matrices
+	Matrix Operations
+	Matrix Multiplication
+	Transpose
+	Inverse
+	Determinants
+	Eigenvalues
+	Eigenvectors
+	Vector Spaces
+	Linear Transformations
+
+Calculus
+	Functions
+	Limits
+	Derivatives
+	Partial Derivatives
+	Gradients
+	Chain Rule
+	Gradient Descent
+	Optimization
+	
+	
+7. Probability & Statistics
+------------------------------------------------------
+	Probability Fundamentals
+	Conditional Probability
+	Bayes Theorem
+	Random Variables
+	Probability Distributions
+	Normal Distribution
+	Binomial Distribution
+	Poisson Distribution
+	Mean
+	Median
+	Mode
+	Variance
+	Standard Deviation
+	Covariance
+	Correlation
+	Sampling
+	Central Limit Theorem
+	Confidence Intervals
+	Hypothesis Testing
+	p-values
+	Statistical Significance
+	
+	
+======================================================
+Machine Learning
+======================================================
+
+8. Machine Learning Fundamentals
+------------------------------------------------------
+	What is Machine Learning
+	AI vs ML vs Deep Learning
+	Features
+	Labels
+	Dataset
+	Training
+	Validation
+	Testing
+	Supervised Learning
+	Unsupervised Learning
+	Semi-Supervised Learning
+	Reinforcement Learning
+	Overfitting
+	Underfitting
+	Bias
+	Variance
+	Bias-Variance Tradeoff
+	Feature Engineering
+	Feature Selection
+	
+	
+9. Supervised Learning
+------------------------------------------------------
+Regression
+	Linear Regression
+	Multiple Linear Regression
+	Polynomial Regression
+	Ridge Regression
+	Lasso Regression
+	Elastic Net
+	
+Classification
+	Logistic Regression
+	K-Nearest Neighbors
+	Naive Bayes
+	Decision Trees
+	Support Vector Machines
+	
+	
+10. Unsupervised Learning
+------------------------------------------------------
+	K-Means
+	Hierarchical Clustering
+	DBSCAN
+	Gaussian Mixture Models
+	Clustering Evaluation
+	Association Rules
+	
+	
+11. Dimensionality Reduction
+------------------------------------------------------
+	PCA
+	Kernel PCA
+	t-SNE
+	UMAP
+	Feature Projection
+
+
+12. Ensemble Learning
+------------------------------------------------------
+	Bagging
+	Random Forest
+	Boosting
+	AdaBoost
+	Gradient Boosting
+	XGBoost
+	LightGBM
+	CatBoost
+	Stacking
+	Voting
+	
+	
+13. Scikit-learn
+------------------------------------------------------
+	Dataset Handling
+	Preprocessing
+	Scaling
+	Encoding
+	Pipelines
+	ColumnTransformer
+	Model Training
+	Prediction
+	Model Persistence
+	Cross-Validation
+	Hyperparameter Tuning
+	
+	
+14. ML Evaluation & Optimization
+------------------------------------------------------
+Regression Metrics
+	MAE
+	MSE
+	RMSE
+	R²
+	MAPE
+	
+Classification Metrics
+	Accuracy
+	Precision
+	Recall
+	F1-Score
+	Confusion Matrix
+	ROC-AUC
+	PR-AUC
+
+Optimization
+	Train / Validation / Test Split
+	K-Fold Cross-Validation
+	GridSearchCV
+	RandomizedSearchCV
+	Bayesian Optimization
+	
+Interpretability
+	Feature Importance
+	SHAP
+	LIME
+	Model Interpretability
+	
+	
+15. Advanced Machine Learning
+------------------------------------------------------
+	Feature Engineering
+	Feature Selection
+	Imbalanced Data
+	SMOTE
+	Cost-Sensitive Learning
+	Anomaly Detection
+	Outlier Detection
+	Ensemble Optimization
+	Model Calibration
+
+
+16. Time Series
+------------------------------------------------------
+	Time Series Fundamentals
+	Trend
+	Seasonality
+	Stationarity
+	Autocorrelation
+	Moving Average
+	ARIMA
+	SARIMA
+	Exponential Smoothing
+	Forecasting
+	Time Series Cross-Validation
+	Prophet
+	Deep Learning for Time Series
+
+
+17. Recommender Systems
+------------------------------------------------------
+	Collaborative Filtering
+	Content-Based Filtering
+	Hybrid Recommendation
+	User-Item Matrix
+	Matrix Factorization
+	Embeddings
+	Recommendation Evaluation
+	
+
+======================================================
+Deep Learning
+======================================================
+
+18. Deep Learning Fundamentals
+------------------------------------------------------
+	Neural Networks
+	Perceptron
+	Neurons
+	Layers
+	Weights
+	Bias
+	Activation Functions
+	Forward Propagation
+	Backpropagation
+	Loss Functions
+	Gradient Descent
+	Learning Rate
+	Optimizers
+	Epochs
+	Batches
+	Batch Normalization
+	Dropout
+	Regularization
+	
+	
+19. PyTorch
+------------------------------------------------------
+	Tensors
+	Tensor Operations
+	Autograd
+	Computational Graph
+	nn.Module
+	Layers
+	Loss Functions
+	Optimizers
+	Dataset
+	DataLoader
+	Training Loop
+	Validation Loop
+	GPU / CUDA
+	Model Saving
+	Model Loading
+	Transfer Learning
+	
+
+======================================================
+Computer Vision
+======================================================
+
+20. Computer Vision Fundamentals
+------------------------------------------------------
+	Image Representation
+	Pixels
+	RGB
+	Grayscale
+	Image Formats
+	OpenCV
+	Image Processing
+	Filtering
+	Edge Detection
+	Thresholding
+	Morphological Operations
+	Image Augmentation
+
+
+21. CNN & Vision Models
+------------------------------------------------------
+	Convolution
+	Filters
+	Kernels
+	Pooling
+	CNN Architecture
+	ResNet
+	EfficientNet
+	Vision Transformers
+
+
+22. Computer Vision Applications
+------------------------------------------------------
+	Image Classification
+	Object Detection
+	YOLO
+	Bounding Boxes
+	IoU
+	NMS
+	Semantic Segmentation
+	Instance Segmentation
+	Face Detection
+	OCR
+	Pose Estimation
+	Image Generation
+	
+
+======================================================
+NLP
+======================================================
+
+23. Natural Language Processing
+------------------------------------------------------
+	Text Processing
+	Tokenization
+	Stop Words
+	Stemming
+	Lemmatization
+	Part-of-Speech Tagging
+	Named Entity Recognition
+	Text Cleaning
+	Text Classification
+
+
+24. NLP Vectorization
+------------------------------------------------------
+	Bag of Words
+	TF-IDF
+	Word Embeddings
+	Word2Vec
+	GloVe
+	FastText
+	Sentence Embeddings
+
+
+25. Sequential Deep Learning
+------------------------------------------------------
+	RNN
+	LSTM
+	GRU
+	Sequence-to-Sequence
+	Encoder-Decoder
+	Attention
+	
+
+======================================================
+Transformers & Generative AI
+======================================================
+
+26. Transformers
+------------------------------------------------------
+	Attention Mechanism
+	Self-Attention
+	Multi-Head Attention
+	Positional Encoding
+	Encoder
+	Decoder
+	Transformer Architecture
+	BERT
+	GPT
+	T5
+
+
+27. Large Language Models — LLMs
+------------------------------------------------------
+	LLM Fundamentals
+	Tokenization
+	Embeddings
+	Context Window
+	Pretraining
+	Instruction Tuning
+	Inference
+	Decoding
+	Temperature
+	Top-K
+	Top-P
+	Quantization
+
+
+28. Generative AI
+------------------------------------------------------
+	Generative AI Fundamentals
+	GANs
+	VAEs
+	Diffusion Models
+	Text Generation
+	Image Generation
+	Code Generation
+	Multimodal Generation
+
+
+29. Prompt Engineering
+------------------------------------------------------
+	Prompt Fundamentals
+	Zero-Shot Prompting
+	Few-Shot Prompting
+	Chain-of-Thought Concepts
+	Structured Outputs
+	System Prompts
+	Prompt Templates
+	Prompt Evaluation
+
+
+30. Embeddings & Vector Databases
+------------------------------------------------------
+	Embeddings
+	Semantic Similarity
+	Similarity Search
+	Vector Search
+	Vector Databases
+	FAISS
+	Chroma
+	Milvus
+	Pinecone
+	Metadata Filtering
+
+
+31. RAG — Retrieval-Augmented Generation
+------------------------------------------------------
+	RAG Architecture
+	Document Loading
+	Document Parsing
+	Chunking
+	Embedding
+	Vector Search
+	Retrieval
+	Reranking
+	Context Construction
+	LLM Generation
+	RAG Evaluation
+	Advanced RAG
+
+
+32. LLM Fine-Tuning
+------------------------------------------------------
+	Fine-Tuning Fundamentals
+	Instruction Fine-Tuning
+	Transfer Learning
+	LoRA
+	QLoRA
+	PEFT
+	Dataset Preparation
+	Training
+	Evaluation
+	Model Quantization
+
+
+33. LLM Evaluation & Safety
+------------------------------------------------------
+	LLM Evaluation
+	Hallucination Detection
+	Groundedness
+	Toxicity Detection
+	Bias
+	Guardrails
+	Content Filtering
+	Prompt Injection
+	Jailbreaks
+	AI Security
+	
+	
+======================================================
+Advanced AI
+======================================================
+
+34. Speech & Audio AI
+------------------------------------------------------
+	Audio Processing
+	Speech Recognition
+	Speech-to-Text
+	Text-to-Speech
+	Speaker Recognition
+	Audio Classification
+	Voice AI
+
+
+35. Multimodal AI
+------------------------------------------------------
+	Vision + Language
+	Image + Text
+	Audio + Text
+	Video + Text
+	Multimodal Embeddings
+	Vision-Language Models
+
+
+36. Reinforcement Learning
+------------------------------------------------------
+	Agents
+	Environment
+	States
+	Actions
+	Rewards
+	Policies
+	Value Functions
+	Q-Learning
+	Deep Q-Networks
+	Policy Gradient
+	Actor-Critic
+	PPO
+
+
+37. Graph Neural Networks
+------------------------------------------------------
+	Graph Fundamentals
+	Nodes
+	Edges
+	Graph Representation
+	Graph Convolution
+	GCN
+	GAT
+	Graph Embeddings
+	Graph Applications
+
+
+38. AI Agents / Agentic AI
+------------------------------------------------------
+	Agent Fundamentals
+	Tool Calling
+	Function Calling
+	Planning
+	Memory
+	Reasoning Workflows
+	Multi-Agent Systems
+	Agent Orchestration
+	Agent Evaluation
+
+
+======================================================
+Data Engineering
+======================================================
+
+39. Data Engineering Fundamentals
+------------------------------------------------------
+	Data Pipelines
+	ETL
+	ELT
+	Data Ingestion
+	Data Transformation
+	Batch Processing
+	Stream Processing
+	Data Validation
+
+
+40. Data Warehousing
+------------------------------------------------------
+	Data Warehouse
+	Data Lake
+	Data Lakehouse
+	Star Schema
+	Snowflake Schema
+	OLTP
+	OLAP
+	Data Modeling
+
+
+41. Big Data
+------------------------------------------------------
+	Big Data Fundamentals
+	Apache Spark
+	PySpark
+	Distributed Computing
+	MapReduce
+	Spark SQL
+	Spark ML
+	Streaming
+	
+
+======================================================
+Software Engineering for AI/ML
+======================================================
+
+42. Software Engineering
+------------------------------------------------------
+	Clean Code
+	SOLID Principles
+	Design Patterns
+	Modular Architecture
+	Object-Oriented Design
+	Error Handling
+	Logging
+	Configuration Management
+
+
+43. Git & Linux
+------------------------------------------------------
+	Git
+	GitHub / GitLab
+	Branching
+	Merging
+	Pull Requests
+	Linux
+	Bash
+	Shell Scripting
+	Process Management
+	Environment Variables
+
+
+44. APIs & Backend
+------------------------------------------------------
+	REST APIs
+	HTTP
+	JSON
+	FastAPI
+	Flask
+	Authentication
+	API Testing
+	Microservices
+
+
+45. Testing
+------------------------------------------------------
+	Unit Testing
+	Integration Testing
+	API Testing
+	Data Testing
+	Model Testing
+	ML Pipeline Testing
+	
+	
+======================================================
+MLOps & Deployment
+======================================================
+
+46. MLOps Fundamentals
+------------------------------------------------------
+	MLOps Lifecycle
+	Model Development
+	Model Training
+	Model Validation
+	Model Deployment
+	Model Monitoring
+	Model Versioning
+
+
+47. ML Experiment Management
+------------------------------------------------------
+	Experiment Tracking
+	MLflow
+	Weights & Biases
+	Dataset Versioning
+	Model Registry
+	Reproducibility
+
+
+48. Model Deployment
+------------------------------------------------------
+	Model Serialization
+	REST API Deployment
+	Batch Inference
+	Real-Time Inference
+	Edge Deployment
+	Model Optimization
+	Quantization
+	ONNX
+
+
+49. Docker & Containers
+------------------------------------------------------
+	Docker Fundamentals
+	Dockerfile
+	Images
+	Containers
+	Docker Compose
+	Containerized ML Applications
+
+
+50. Kubernetes
+------------------------------------------------------
+	Kubernetes Fundamentals
+	Pods
+	Deployments
+	Services
+	ConfigMaps
+	Secrets
+	Scaling
+	ML Workloads
+
+
+51. Cloud Computing
+------------------------------------------------------
+	Cloud Fundamentals
+	AWS
+	Azure
+	GCP
+	Cloud Storage
+	Compute
+	GPU Instances
+	Managed ML Services
+
+
+52. ML Pipelines & CI/CD
+------------------------------------------------------
+	Automated Training
+	Data Pipelines
+	ML Pipelines
+	CI/CD
+	GitHub Actions
+	Automated Testing
+	Automated Deployment
+	
+	
+53. Model Monitoring
+------------------------------------------------------
+Model Performance Monitoring
+Data Drift
+Concept Drift
+Model Drift
+Data Quality Monitoring
+Logging
+Alerts
+Retraining Pipelines
+
+
+======================================================
+Practical Skills
+======================================================
+
+55. AI System Design
+------------------------------------------------------
+AI Architecture
+ML System Design
+Data Architecture
+Model Architecture
+Inference Architecture
+Scalable AI Systems
+Distributed AI Systems
+Cost Optimization
+Latency Optimization
+Reliability
+Production Architecture
