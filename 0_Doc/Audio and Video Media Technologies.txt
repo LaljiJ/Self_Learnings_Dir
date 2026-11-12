@@ -1,0 +1,96 @@
+PART 6: Audio and Video Media Technologies:
+-------------------------------------------
+
+Video Technologies:
+===================
+
+What is video processing?
+	- Video processing involves capturing, transferring, decoding, encoding and displaying video frames.
+
+              CAMERA SENSOR
+                    |
+                    |
+               MIPI CSI
+                    |
+                    |
+              CAMERA DRIVER
+                    |
+                    |
+                V4L2 API
+                    |
+                    |
+             VIDEO APPLICATION
+                    |
+                    |
+             IMAGE PROCESSING
+                    |
+                    |
+              DISPLAY / HDMI
+
+              
+Important video terminology:
+	Camera Sensor	-	Hardware that captures images
+	V4L2		-	Linux Video4Linux2 API
+	MIPI CSI	-	Camera interface used to transfer image data
+	Pixel		-	Smallest unit of an image
+	Resolution	-	Image dimensions
+	Frame Rate	-	Frames captured/displayed per second
+	FPS		-	Frames per second
+	Codec		-	Technology for encoding/decoding media
+	H.264		-	Video compression standard
+	H.265		-	More efficient video compression standard
+	RGB		-	Red, Green and Blue color representation
+	YUV		-	Luminance and chrominance color representation
+	MJPEG		-	Motion JPEG video format
+	DMA		-	Direct Memory Access
+	Zero-Copy	-	Avoiding unnecessary data copying between components
+	Buffer		-	Memory region holding image data
+	
+
+
+
+
+Audio Technologies:
+===================
+
+What is audio processing?
+	- Audio processing involves capturing, converting, processing, transmitting and playing audio signals.
+
+             MICROPHONE
+                  |
+                  |
+                ADC
+                  |
+                  |
+              AUDIO CODEC
+                  |
+                  |
+              ALSA DRIVER
+                  |
+                  |
+               ALSA API
+                  |
+                  |
+           AUDIO APPLICATION
+                  |
+                  |
+             AUDIO OUTPUT
+                  |
+                  |
+               SPEAKER
+               
+
+Important audio terminology:
+	PCM		-	Uncompressed digital audio representation
+	ADC		-	Analog-to-Digital Converter
+	DAC		-	Digital-to-Analog Converter
+	Sample Rate	-	Number of audio samples per second
+	Bit Depth	-	Number of bits used to represent a sample
+	Channels	-	Mono, stereo, etc.
+	ALSA		-	Advanced Linux Sound Architecture
+	Audio Codec	-	Hardware/software that converts or compresses audio
+	Mixer		-	Controls audio levels and routing
+	Buffer		-	Stores audio samples
+	Latency		-	Delay between audio capture and playback
+	
+

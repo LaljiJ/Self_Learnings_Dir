@@ -1,0 +1,81 @@
+Device-to-server communication over the web relies on a structured request-response model operating across the network stack. While both HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) share the same core application-layer vocabulary, they handle network transport, security, and port negotiation fundamentally differently.
+
+
+1. The Core HTTP Communication Cycle
+	- Every HTTP transaction follows a stateless, text-based workflow over a standard Transmission Control Protocol (TCP) connection.
+
+		[ Device / Client ]                                     [ Web Server ]
+
+			 |                                                    |
+			 | ------------ 1. TCP Handshake (Port 80) ---------> |
+			 | <----------- 2. TCP Established ------------------ |
+			 |                                                    |
+			 | ------------ 3. HTTP Request (Plaintext) --------> |
+			 | <----------- 4. HTTP Response (Plaintext) -------- |
+			 
+
+	1. Connection Setup: The device utilizes the Domain Name System (DNS) to resolve the server’s domain into an IP address. It then establishes a standard TCP handshake on Port 80 (the default port for plain HTTP).
+	2. The Client Request: The device transmits a formatted plaintext block containing:
+		- Request Line: The HTTP method (GET, POST, PUT, DELETE), target URI, and version (e.g., HTTP/1.1).
+		- Headers: Metadata including Host, User-Agent, and authorization tokens.
+		- Body: Optional payload data (typically used in POST or PUT actions).
+	3. The Server Response: The server processes the request and replies with an unencrypted payload comprising:
+		- Status Line: Numeric status indicators (e.g., 200 OK, 404 Not Found).
+		- Headers: Metadata indicating Content-Type, caching policies, or cookies.
+		- Body: The actual requested assets, such as HTML, JSON strings, or images.
+	4. Vulnerability: Because the data streams in raw plaintext, any node along the routing path can inspect or manipulate the payload via man-in-the-middle (MITM) attacks.
+	
+	
+
+
+2. The HTTPS Communication Cycle (HTTP over TLS)
+	- HTTPS addresses this vulnerability by inserting a Transport Layer Security (TLS) cryptographic layer beneath the application protocol. Communication moves by default to Port 443.
+		
+		[ Device / Client ]                                     [ Web Server ]
+
+			 |                                                    |
+			 | ------------ 1. TCP Handshake (Port 443) --------> |
+			 | <----------- 2. TCP Established ------------------ |
+			 |                                                    |
+			 | ================== TLS HANDSHAKE ================= |
+			 | ------------ 3. Client Hello --------------------> |
+			 | <----------- 4. Server Hello + CA Certificate ---- |
+			 | ------------ 5. Key Exchange (Encrypted Session) ->|
+			 | ================================================== |
+			 |                                                    |
+			 | ------------ 6. Encrypted HTTPS Request ---------> |
+			 | <----------- 7. Encrypted HTTPS Response --------- |
+			 
+	- Before any application data is sent, the device and server perform a multi-step TLS Handshake to establish identity and security keys:
+	
+	Step 1: Protocol Negotiation (Client/Server Hello)
+		- The device sends a "Client Hello" specifying its supported TLS versions and cryptographic algorithms (cipher suites). The server responds with a "Server Hello" choosing the highest mutually supported parameters.
+	Step 2: Server Authentication
+		- The server delivers its SSL/TLS Certificate signed by a trusted third-party Certificate Authority (CA). The device mathematically verifies the certificate chain against its local trust store to ensure the server's identity.
+	Step 3: The Hybrid Encryption Key Exchange
+		- HTTPS efficiently balances two cryptographic methodologies:
+		- Asymmetric Encryption: The device generates a random, short-term Symmetric Session Key. It encrypts this key using the server’s Public Key (extracted from the validated certificate) and transmits it. The server decrypts it using its corresponding Private Key.
+		- Symmetric Encryption: Now that both nodes safely share the identical Session Key without anyone else intercepting it, asymmetric math is turned off. All continuous HTTP traffic is rapidly encrypted and decrypted using this shared symmetric key (e.g., using AES).
+		
+
+
+
+HTTP vs HTTPS – Protocol Comparison
++--------------------------+--------------------------------+----------------------------------------------+
+| Feature                  | HTTP                           | HTTPS                                        |
++--------------------------+--------------------------------+----------------------------------------------+
+| Communication            | Directly over TCP              | Over TCP through TLS                          |
+| Default Port              | 80                             | 443                                          |
+| Data Format               | Plaintext                      | Encrypted Ciphertext                         |
+| TCP Handshake             | 1 TCP Round Trip (RTT)         | 1 TCP Round Trip (RTT)                       |
+| TLS Handshake             | Not Required                  | Required (1-2 RTTs, depending on TLS version)|
+| Data Confidentiality      | No Encryption                 | Encrypted Communication                      |
+| Data Integrity            | No Built-in Protection        | Cryptographic Integrity Protection           |
+| Authentication            | No Server Authentication      | Server Authentication via TLS Certificate   |
+| Security                  | Vulnerable to Data Sniffing   | Protects Against Sniffing and Tampering      |
+| Performance               | Lower Handshake Overhead      | Additional TLS Handshake Overhead            |
++--------------------------+--------------------------------+----------------------------------------------+
+
+
+
+         
